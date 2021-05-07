@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Team_CSG_Music_Player.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedTeam_CSG_Music_Player_id() {
+        dtjava.embed(
+            {
+                id : 'Team_CSG_Music_Player_id',
+                url : 'Team_CSG_Music_Player.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedTeam_CSG_Music_Player_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>Team CSG Music Player</b></h2>
+  <b>Webstart:</b> <a href='Team_CSG_Music_Player.jnlp' onclick="return launchApplication('Team_CSG_Music_Player.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

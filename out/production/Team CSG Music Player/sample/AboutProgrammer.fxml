@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.AboutController"
+            prefHeight="200.0" prefWidth="300.0" styleClass="root" >
+
+    <headerText >
+        TEAM CSG JAVA PROGRAMMER
+    </headerText>
+    <content>
+
+        <GridPane alignment="CENTER">
+            <Label alignment="CENTER" text="Nelson CSN2019 " GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Email : " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Label text="edehkelechi690@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        </GridPane>
+
+    </content>
+
+
+    <stylesheets>
+        <URL value="@background.css"/>
+    </stylesheets>
+
+</DialogPane>
